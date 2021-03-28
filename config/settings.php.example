@@ -1,0 +1,30 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'flexget' => 'path to flexget',
+    'rsync_1' => "rsync command",
+    'rsync_2' => "rsync command",
+
+    // process by cat, give the array any name you like, then call it by that name
+    'one' => [
+        'type' => 'cats',
+        'url' => 'rss feed url',
+        'task' => 'name',
+        'data' => 'path to store flexget data',
+        'torrent' => 'path to store torrents',
+        'cats' => 'array of categories'
+        'pid' => 'pid file',
+    ],
+
+    // process by feeds, give the array any name you like, then call it by that name
+    'two' => [
+        'type' => 'feeds',
+        'feeds' => 'array of feeds',
+        'task' => 'name',
+        'data' => 'path to store flexget data',
+        'torrent' => 'path to store torrents',
+        'pid' => 'pid file',
+    ],
+];
